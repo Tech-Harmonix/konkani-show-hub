@@ -20,50 +20,51 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="space-y-8 animate-fade-up">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+        <div className="space-y-6 sm:space-y-8 animate-fade-up">
           {/* Logo/Brand */}
           <div className="space-y-2">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2 sm:mb-4">
               <span className="bg-gradient-to-r from-cultural-gold to-cultural-orange bg-clip-text text-transparent">
                 KonkaniShow
               </span>
               <span className="text-white">.com</span>
             </h1>
-            <p className="text-xl md:text-2xl text-cultural-gold font-medium">Coming Soon!</p>
+            <p className="text-lg sm:text-xl md:text-2xl text-cultural-gold font-medium">Coming Soon!</p>
           </div>
 
           {/* Main Message */}
-          <div className="space-y-6">
-            <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight">
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight px-2">
               🌟 Your one-stop destination for all 
-              <br />
+              <br className="hidden sm:block" />
+              <span className="sm:inline block mt-1 sm:mt-0"> </span>
               <span className="text-cultural-gold">Konkani entertainment</span> 🎭🎶
             </h2>
             
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed px-2">
               Find the latest updates on movies, theatres, stand-up comedy, concerts, shows, workshops & cultural programs. Get all the dates, times, and locations in one place!
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-8 px-4">
+            <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
               🔔 Notify Me When Live
             </Button>
-            <Button variant="cultural" size="lg" className="text-lg px-8 py-4">
+            <Button variant="cultural" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto">
               📱 Follow Updates
             </Button>
           </div>
 
           {/* Multilingual Footer */}
-          <div className="pt-8 border-t border-white/20">
-            <p className="text-cultural-gold font-semibold text-lg mb-2">
+          <div className="pt-6 sm:pt-8 border-t border-white/20 mt-6 sm:mt-8">
+            <p className="text-cultural-gold font-semibold text-base sm:text-lg mb-2 px-2">
               ✨ Something Special for All Konkani Lovers! ✨
             </p>
             <div className="space-y-2">
-              <p className="text-white/80 font-medium">🌍 By Mandd Sobhann</p>
-              <div className="flex flex-wrap justify-center gap-4 text-sm text-white/70">
+              <p className="text-white/80 font-medium text-sm sm:text-base">🌍 By Mandd Sobhann</p>
+              <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-white/70 px-4">
                 <span>कोंकणी</span>
                 <span>•</span>
                 <span>ಕೊಂಕಣಿ</span>

@@ -29,18 +29,18 @@ const features = [
 
 export const FeaturesSection = () => {
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16 space-y-3 sm:space-y-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground px-2">
             What's Coming to <span className="text-cultural-orange">KonkaniShow</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Everything you need to stay connected with the vibrant Konkani entertainment scene
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
           {features.map((feature, index) => (
             <Card 
               key={feature.title}
@@ -64,10 +64,10 @@ export const FeaturesSection = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-cultural-gold/10 border border-cultural-gold/20 rounded-full px-6 py-3">
-            <span className="text-2xl animate-bounce">✅</span>
-            <span className="text-cultural-deep font-semibold">All dates, times, and locations in one place!</span>
+        <div className="mt-10 sm:mt-12 md:mt-16 text-center px-4">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-2 bg-cultural-gold/10 border border-cultural-gold/20 rounded-full px-4 sm:px-6 py-3">
+            <span className="text-xl sm:text-2xl animate-bounce">✅</span>
+            <span className="text-cultural-deep font-semibold text-sm sm:text-base text-center">All dates, times, and locations in one place!</span>
           </div>
         </div>
       </div>
