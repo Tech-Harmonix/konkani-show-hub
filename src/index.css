@@ -39,10 +39,10 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Cultural design tokens - Mandd Sobhann brand colors */
-    --cultural-orange: 20 85% 55%;
-    --cultural-purple: 340 60% 50%;
-    --cultural-gold: 43 96% 56%;
-    --cultural-deep: 345 70% 30%;
+    --cultural-orange: 35 60% 80%;
+    --cultural-purple: 340 45% 35%;
+    --cultural-gold: 35 60% 80%;
+    --cultural-deep: 340 45% 25%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--cultural-orange)), hsl(var(--cultural-purple)));
