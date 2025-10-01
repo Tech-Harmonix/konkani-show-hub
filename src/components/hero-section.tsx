@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/konkani-hero.jpg";
+import manddSobhannLogo from "@/assets/mandd-sobhann-logo.jpg";
 
 export const HeroSection = () => {
   return (
@@ -23,7 +24,14 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         <div className="space-y-6 sm:space-y-8 animate-fade-up">
           {/* Logo/Brand */}
-          <div className="space-y-2">
+          <div className="space-y-4">
+            <div className="flex justify-center mb-4">
+              <img 
+                src={manddSobhannLogo} 
+                alt="Mandd Sobhann" 
+                className="h-20 sm:h-24 md:h-28 w-auto"
+              />
+            </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2 sm:mb-4">
               <span className="bg-gradient-to-r from-cultural-gold to-cultural-orange bg-clip-text text-transparent">
                 KonkaniShow

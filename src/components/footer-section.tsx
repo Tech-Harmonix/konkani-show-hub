@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
-import manddSobhannLogo from "@/assets/mandd-sobhann-logo.png";
+import manddSobhannLogo from "@/assets/mandd-sobhann-logo.jpg";
 
 export const FooterSection = () => {
   return (
