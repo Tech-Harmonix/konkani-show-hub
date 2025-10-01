@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin } from "lucide-react";
+import manddSobhannLogo from "@/assets/mandd-sobhann-logo.png";
 
 export const FooterSection = () => {
   return (
@@ -19,18 +21,45 @@ export const FooterSection = () => {
         </div>
 
         {/* Mandd Sobhann Info */}
-        <div className="border-t border-white/20 pt-6 sm:pt-8 space-y-3 sm:space-y-4">
+        <div className="border-t border-white/20 pt-6 sm:pt-8 space-y-4 sm:space-y-6">
+          {/* Logo */}
+          <div className="flex justify-center">
+            <img 
+              src={manddSobhannLogo} 
+              alt="Mandd Sobhann Logo" 
+              className="h-16 sm:h-20 w-auto"
+            />
+          </div>
+          
           <div className="space-y-2 px-2">
             <h4 className="text-lg sm:text-xl font-semibold text-cultural-gold">Mandd Sobhann</h4>
-            <p className="text-white/70 max-w-2xl mx-auto text-sm sm:text-base px-2">
-              Preserving and promoting Konkani language, literature, and culture through various artistic and cultural initiatives.
+            <p className="text-white/90 max-w-2xl mx-auto text-sm sm:text-base px-2 font-medium">
+              World's Premier Konkani Cultural Organisation dedicated to preserving and promoting Konkani culture, language, and heritage.
             </p>
           </div>
           
-          {/* Social/Contact Placeholder */}
-          <div className="flex justify-center gap-4 pt-2 sm:pt-4">
-            <div className="text-xs sm:text-sm text-white/60">
-              More details coming soon...
+          {/* Contact Information */}
+          <div className="space-y-3 sm:space-y-4 pt-2">
+            <h5 className="text-cultural-gold font-semibold text-base sm:text-lg">Contact Us</h5>
+            <div className="space-y-2 sm:space-y-3 text-white/80 text-sm sm:text-base">
+              <div className="flex items-start justify-center gap-2 px-4">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5 text-cultural-gold" />
+                <span className="text-left max-w-md">
+                  Mandd Sobhann, Kalaangann, Shaktinagar, Mangalore - 575016, Karnataka, India
+                </span>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-cultural-gold" />
+                <a href="tel:+918242211964" className="hover:text-cultural-gold transition-colors">
+                  +91 824 2211964
+                </a>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-cultural-gold" />
+                <a href="mailto:info@manddsobhann.org" className="hover:text-cultural-gold transition-colors">
+                  info@manddsobhann.org
+                </a>
+              </div>
             </div>
           </div>
         </div>
